@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url("./raw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+    background-position: center;
+
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    /* width: 50%; */
+    background: cornsilk;
+    box-shadow: 0 0 3px rgba( 0, 0, 0, 0.1);
+    border-radius: 20px;
+    opacity: 0.7;
+    margin-top: 15%;
+    transition: width 1s, height 1s, transform 2s;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: cornsilk;
+    border-radius: 20px;
+}
+
+.container:hover .overlay {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+#clock {
+    color: black;
+    font-family: 'Arial';
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    margin-left: 3%;
+    z-index: 1;
+}
+
+#message {
+    color:  black;
+    font-family: 'Arial';
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+    margin-top: 12%;
+}
